@@ -1,4 +1,4 @@
-const url='https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/transporte/transporte-dados-globais.json'
+const url='https://github.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/blob/Aula01/esportes/esportes-dados-globais.json'
 
 async function vizualizarInformacoesGlobais() {
     const res = await fetch(url)
