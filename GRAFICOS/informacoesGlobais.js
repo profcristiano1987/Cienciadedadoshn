@@ -1,4 +1,4 @@
-const url='https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/esportes/esportes-dados-globais.json'
+const url='https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/educacao/educacao-dados-globais.json'
 
 async function vizualizarInformacoesGlobais() {
     const res = await fetch(url)
@@ -6,8 +6,10 @@ async function vizualizarInformacoesGlobais() {
     console.log(dados)
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-container__texto')
-    paragrafo.innerHTML = `Com uma população global de quase <span>${dados.total_pessoas_mundo}</span>, os esportes têm uma presença marcante no cotidiano das pessoas.${dados.total_pessoas_que_praticam_esportes_regularmente} praticam esportes regularmente, dedicando em média ${dados.tempo_medio_semana_praticando_esportes}horas por semana para cuidar da saúde e melhorar seu bem-estar. Além disso, ${dados.total_pessoas_que_assistem_esportes} de pessoas acompanham eventos esportivos, tornando o esporte uma paixão que une pessoas de todas as culturas e idades. Esses números mostram que o esporte é muito mais do que atividade física ou entretenimento; é um fenômeno global que conecta e inspira`
+    paragrafo.innerHTML = `Você sabia que o total de pessoas no mundo é de ${dados.total_pessoas_mundo} de pessoas e que o  total de pessoas com acesso à educação é de ${dados.total_pessoas_com_acesso_a_educacao}? O tempo médio gasto por dia estudando é de ${dados.tempo_medio_dia_estudando} horas e o total de pessoas com educação superior é de ${dados.total_pessoas_com_educacao_superior}.  Será que esses dados apontam para uma realidade de um mundo esclarecido e com facilidade de acesso à Educação?
+`
     const container = document.getElementById('graficos-container')
     container.appendChild(paragrafo);
 }
+
 vizualizarInformacoesGlobais()
