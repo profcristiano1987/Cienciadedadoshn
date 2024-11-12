@@ -1,4 +1,4 @@
-https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/educacao/educacao-etapas-de-ensino.json
+https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json
 
 async function quantidadeUsuarios() {
     const url = 'https://raw.githubusercontent.com/guilhermeomrails/api/main/numero-usuarios.json'
